@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لينز ماستر | تصوير احترافي</title>
+  <meta name="description"
+    content="بنلقط اللحظات اللي بتعدي ونحولها لفن يعيش للأبد. خدمات تصوير احترافي للبورتريه والمناظر والأفراح والمنتجات.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-active">
+
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ====== CAMERA INTRO ANIMATION ====== -->
+  <div class="camera-intro" id="cameraIntro">
+    <div class="viewfinder">
+      <!-- Rule of Thirds Grid -->
+      <div class="vf-grid">
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="v-line"></div>
+        <div class="v-line"></div>
+      </div>
+
+      <!-- Focus Brackets -->
+      <div class="focus-brackets" id="focusBrackets">
+        <div class="bracket tl"></div>
+        <div class="bracket tr"></div>
+        <div class="bracket bl"></div>
+        <div class="bracket br"></div>
+        <div class="focus-center"></div>
+      </div>
+
+      <!-- Camera UI Info -->
+      <div class="cam-ui top-left"><span class="rec-dot"></span>REC 00:01</div>
+      <div class="cam-ui top-right">f/2.8 &nbsp; 1/125s &nbsp; ISO 400</div>
+      <div class="cam-ui bottom-left">AF ● TRACKING</div>
+      <div class="cam-ui bottom-right">RAW + JPEG &nbsp; 📷</div>
+    </div>
+  </div>
+
+  <!-- Shutter & Flash Overlays -->
+  <div class="shutter-overlay" id="shutterOverlay"></div>
+  <div class="flash-overlay" id="flashOverlay"></div>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo" data-cursor="hover">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 8H20V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V8Z" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M12 17C13.6569 17 15 15.6569 15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M17 5H7L5 8H19L17 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+      محمود <span>سمير</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="active" data-cursor="hover">الرئيسية</a></li>
+      <li><a href="#about" data-cursor="hover">عنّي</a></li>
+      <li><a href="#gallery" data-cursor="hover">أعمالي</a></li>
+      <li><a href="#pricing" data-cursor="hover">الأسعار</a></li>
+      <li><a href="#booking" data-cursor="hover">احجز دلوقتي</a></li>
+      <li><a href="#contact" data-cursor="hover">تواصل معايا</a></li>
+    </ul>
+    <div class="nav-hamburger" id="navHamburger" data-cursor="hover">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">تصوير احترافي</p>
+      <h1 class="hero-title">بنلقط <span class="highlight">اللحظات</span> اللي بتعيش للأبد</h1>
+      <p class="hero-desc">كل صورة بتحكي حكاية. بنحوّل اللحظات العابرة لفن خالد من خلال عدسة مليانة شغف واحتراف.</p>
+      <a href="#booking" class="hero-cta" data-cursor="hover">
+        <span class="btn-text">احجز جلسة تصوير</span>
+        <span class="arrow">←</span>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">اسكرول لتحت</span>
+    </div>
+  </section>
+
+  <!-- ====== MARQUEE ====== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>تصوير</span>
+        <div class="dot"></div>
+        <span>إبداع</span>
+        <div class="dot"></div>
+        <span>شغف</span>
+        <div class="dot"></div>
+        <span>لحظات</span>
+        <div class="dot"></div>
+        <span>فن</span>
+        <div class="dot"></div>
+        <span>رؤية</span>
+        <div class="dot"></div>
+        <span>نور</span>
+        <div class="dot"></div>
+        <span>إحساس</span>
+        <div class="dot"></div>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>تصوير</span>
+        <div class="dot"></div>
+        <span>إبداع</span>
+        <div class="dot"></div>
+        <span>شغف</span>
+        <div class="dot"></div>
+        <span>لحظات</span>
+        <div class="dot"></div>
+        <span>فن</span>
+        <div class="dot"></div>
+        <span>رؤية</span>
+        <div class="dot"></div>
+        <span>نور</span>
+        <div class="dot"></div>
+        <span>إحساس</span>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="section about" id="about">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">مين أنا</p>
+      <h2 class="section-title">الحكاية ورا<br>العدسة</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image-wrapper" data-aos="fade-right" data-aos-delay="200">
+        <img src="محمود.png" alt="صورة المصور" class="about-image" loading="lazy">
+        <div class="about-exp-badge">
+          <span class="number">١٠</span>
+          <span class="label">سنين خبرة</span>
+        </div>
+      </div>
+
+      <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+        <h3>أهلاً، أنا <span class="gold">محمود سمير</span></h3>
+        <p>بقالي أكتر من ١٠ سنين ماسك الكاميرا وبصوّر. متخصص إني ألقط جمال اللحظات الغالية في حياتك. من البورتريه الحميم
+          لحد المناظر الطبيعية الخلابة، كل صورة بصنعها بنيّة وفن.</p>
+        <p>DSLRLens بيجمع بين الدقة التقنية والرؤية الإبداعية، عشان كل صورة تحكي قصة فريدة. أنا مؤمن إن أحلى الصور مش بس
+          بتتشاف — دي بتتحس.</p>
+        <p>سواء كان فرح، حدث شركات، تصوير منتجات، أو جلسة تصوير شخصية — أنا بيبقى عندي نفس الشغف والاحتراف في كل مشروع.
+        </p>
+
+        <div class="about-skills">
+          <span class="skill-tag" data-cursor="hover">بورتريه</span>
+          <span class="skill-tag" data-cursor="hover">مناظر طبيعية</span>
+          <span class="skill-tag" data-cursor="hover">أفراح</span>
+          <span class="skill-tag" data-cursor="hover">منتجات</span>
+          <span class="skill-tag" data-cursor="hover">مناسبات</span>
+          <span class="skill-tag" data-cursor="hover">تعديل صور</span>
+          <span class="skill-tag" data-cursor="hover">درون</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY SECTION ====== -->
+  <section class="section gallery" id="gallery">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">أعمالي</p>
+      <h2 class="section-title">أعمال مختارة</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all" data-cursor="hover">الكل</button>
+      <button class="filter-btn" data-filter="portrait" data-cursor="hover">بورتريه</button>
+      <button class="filter-btn" data-filter="landscape" data-cursor="hover">مناظر طبيعية</button>
+      <button class="filter-btn" data-filter="wedding" data-cursor="hover">أفراح</button>
+      <button class="filter-btn" data-filter="product" data-cursor="hover">منتجات</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Portrait -->
+      <div class="gallery-item" data-category="portrait" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="تصوير بورتريه"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>بورتريه الساعة الذهبية</h4>
+          <p>بورتريه</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="portrait" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="تصوير بورتريه"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>بورتريه دراماتيكي</h4>
+          <p>بورتريه</p>
+        </div>
+      </div>
+
+      <!-- Landscape -->
+      <div class="gallery-item" data-category="landscape" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="تصوير مناظر طبيعية"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>عظمة الجبال</h4>
+          <p>مناظر طبيعية</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="landscape" data-aos="fade-up" data-aos-delay="250">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80" alt="تصوير مناظر طبيعية"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>شروق الوادي</h4>
+          <p>مناظر طبيعية</p>
+        </div>
+      </div>
+
+      <!-- Wedding -->
+      <div class="gallery-item" data-category="wedding" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="تصوير أفراح"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>عهود الحب</h4>
+          <p>أفراح</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="wedding" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" alt="تصوير أفراح"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>الرقصة الأولى</h4>
+          <p>أفراح</p>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="gallery-item" data-category="product" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="تصوير منتجات"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>أناقة بسيطة</h4>
+          <p>منتجات</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="product" data-aos="fade-up" data-aos-delay="250">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80" alt="تصوير منتجات"
+          loading="lazy">
+        <div class="gallery-item-overlay">
+          <div class="view-icon">🔍</div>
+          <h4>عرض نظيف</h4>
+          <p>منتجات</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LIGHTBOX MODAL ====== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" data-cursor="hover">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" data-cursor="hover">❯</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" data-cursor="hover">❮</button>
+    <img src="" alt="معاينة الصورة" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <!-- ====== STATS SECTION ====== -->
+  <section class="section stats" id="stats">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-number" data-target="850">٠<span class="suffix">+</span></div>
+        <div class="stat-label">مشروع اتنفذ</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-number" data-target="400">٠<span class="suffix">+</span></div>
+        <div class="stat-label">عميل مبسوط</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-number" data-target="10">٠<span class="suffix">+</span></div>
+        <div class="stat-label">سنين خبرة</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-number" data-target="15">٠<span class="suffix"></span></div>
+        <div class="stat-label">جايزة اتكسبت</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS SECTION ====== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">آراء العملاء</p>
+      <h2 class="section-title">إيه رأي الناس فينا</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">شغل خرافي والله! صور الفرح بتاعنا طلعت فوق كل التوقعات. كل لحظة اتصورت بإحساس وجمال
+          مكنتش أتخيله.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">س</div>
+          <div>
+            <div class="testimonial-name">سارة وأحمد</div>
+            <div class="testimonial-role">تصوير فرح</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">محترف وفنان حقيقي. منتجاتنا عمرها ما طلعت بالجمال ده. الاهتمام بالتفاصيل والإضاءة
+          كان مثالي ومينفعش يتوصف.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">م</div>
+          <div>
+            <div class="testimonial-name">محمد الشريف</div>
+            <div class="testimonial-role">تصوير منتجات</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">جلسة التصوير كانت تجربة مختلفة خالص. خلاني أحس براحة وثقة، والنتيجة كانت مذهلة.
+          بروفايلي بقى حاجة تانية!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">أ</div>
+          <div>
+            <div class="testimonial-name">أميرة حسن</div>
+            <div class="testimonial-role">جلسة بورتريه</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING SECTION ====== -->
+  <section class="section pricing" id="pricing">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">الباقات والأسعار</p>
+      <h2 class="section-title">اختار الباقة المناسبة ليك</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Basic -->
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-icon">📸</div>
+        <div class="pricing-name">الأساسية</div>
+        <div class="pricing-price"><span class="currency">ج.م</span>٣٠٠٠</div>
+        <div class="pricing-period">للجلسة الواحدة</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> جلسة ساعة واحدة</li>
+          <li><span class="check">✓</span> ٢٠ صورة معدّلة</li>
+          <li><span class="check">✓</span> لوكيشن واحد</li>
+          <li><span class="check">✓</span> معرض أونلاين</li>
+          <li><span class="check">✓</span> التسليم في ٧ أيام</li>
+        </ul>
+        <button class="pricing-btn" data-cursor="hover"
+          onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">احجز دلوقتي</button>
+      </div>
+
+      <!-- Professional (Featured) -->
+      <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-badge">الأكتر طلباً</div>
+        <div class="pricing-icon">🎬</div>
+        <div class="pricing-name">الاحترافية</div>
+        <div class="pricing-price"><span class="currency">ج.م</span>٧٥٠٠</div>
+        <div class="pricing-period">للجلسة الواحدة</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> جلسة ٣ ساعات</li>
+          <li><span class="check">✓</span> ٦٠ صورة معدّلة</li>
+          <li><span class="check">✓</span> ٣ لوكيشنز</li>
+          <li><span class="check">✓</span> معرض أونلاين + فلاشة</li>
+          <li><span class="check">✓</span> تصوير درون</li>
+          <li><span class="check">✓</span> التسليم في ٥ أيام</li>
+        </ul>
+        <button class="pricing-btn" data-cursor="hover"
+          onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">احجز دلوقتي</button>
+      </div>
+
+      <!-- Premium -->
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="pricing-icon">🏆</div>
+        <div class="pricing-name">المميزة</div>
+        <div class="pricing-price"><span class="currency">ج.م</span>١٥٠٠٠</div>
+        <div class="pricing-period">يوم كامل</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> تغطية يوم كامل</li>
+          <li><span class="check">✓</span> صور بدون حدود</li>
+          <li><span class="check">✓</span> لوكيشنز بدون حدود</li>
+          <li><span class="check">✓</span> ألبوم فاخر + فلاشة</li>
+          <li><span class="check">✓</span> درون + فيديو</li>
+          <li><span class="check">✓</span> تسليم سريع في ٣ أيام</li>
+        </ul>
+        <button class="pricing-btn" data-cursor="hover"
+          onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">احجز دلوقتي</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BOOKING SECTION ====== -->
+  <section class="section booking" id="booking">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">احجز دلوقتي</p>
+      <h2 class="section-title">احجز جلسة التصوير بتاعتك</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="booking-container" data-aos="fade-up" data-aos-delay="200">
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <label for="bookName">الاسم بالكامل</label>
+          <input type="text" id="bookName" placeholder="اكتب اسمك هنا" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookEmail">البريد الإلكتروني</label>
+          <input type="email" id="bookEmail" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookPhone">رقم الموبايل</label>
+          <input type="tel" id="bookPhone" placeholder="٠١٠ ١٢٣٤ ٥٦٧٨" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookDate">التاريخ المفضل</label>
+          <input type="date" id="bookDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookPackage">الباقة</label>
+          <select id="bookPackage" required>
+            <option value="" disabled selected>اختار الباقة</option>
+            <option value="basic">الأساسية — ٣٠٠٠ ج.م</option>
+            <option value="professional">الاحترافية — ٧٥٠٠ ج.م</option>
+            <option value="premium">المميزة — ١٥٠٠٠ ج.م</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bookType">نوع التصوير</label>
+          <select id="bookType" required>
+            <option value="" disabled selected>اختار النوع</option>
+            <option value="portrait">بورتريه</option>
+            <option value="wedding">فرح</option>
+            <option value="product">منتجات</option>
+            <option value="event">مناسبات</option>
+            <option value="landscape">مناظر طبيعية</option>
+            <option value="other">تاني</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="bookMessage">تفاصيل إضافية</label>
+          <textarea id="bookMessage"
+            placeholder="قولنا أكتر عن اللي في بالك، اللوكيشن اللي تحبه، أو أي طلبات خاصة..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" data-cursor="hover">
+          <span class="btn-text">📷 ابعت طلب الحجز</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER / CONTACT ====== -->
+  <footer class="section footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand" data-aos="fade-up">
+        <div class="logo-text">محمود <span>سمير</span></div>
+        <p>بنحوّل اللحظات لفن خالد. خدمات تصوير احترافي بتلقط جوهر كل حكاية وبتخليها تعيش للأبد.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" data-cursor="hover" aria-label="انستجرام">📷</a>
+          <a href="#" class="social-link" data-cursor="hover" aria-label="فيسبوك">📘</a>
+          <a href="#" class="social-link" data-cursor="hover" aria-label="تويتر">🐦</a>
+          <a href="#" class="social-link" data-cursor="hover" aria-label="يوتيوب">🎬</a>
+          <a href="#" class="social-link" data-cursor="hover" aria-label="تيك توك">🎵</a>
+        </div>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero" data-cursor="hover">الرئيسية</a></li>
+          <li><a href="#about" data-cursor="hover">عنّي</a></li>
+          <li><a href="#gallery" data-cursor="hover">أعمالي</a></li>
+          <li><a href="#pricing" data-cursor="hover">الأسعار</a></li>
+          <li><a href="#booking" data-cursor="hover">احجز دلوقتي</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+        <h4>خدماتنا</h4>
+        <ul>
+          <li><a href="#" data-cursor="hover">تصوير بورتريه</a></li>
+          <li><a href="#" data-cursor="hover">تصوير أفراح</a></li>
+          <li><a href="#" data-cursor="hover">تصوير منتجات</a></li>
+          <li><a href="#" data-cursor="hover">تغطية مناسبات</a></li>
+          <li><a href="#" data-cursor="hover">تعديل ومونتاج</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+        <h4>تواصل معانا</h4>
+        <div class="footer-contact-item">
+          <div class="icon">📍</div>
+          <div class="info">
+            <div class="label-text">العنوان</div>
+            <p>شارع الإبداع، القاهرة، مصر</p>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="icon">📞</div>
+          <div class="info">
+            <div class="label-text">الموبايل</div>
+            <p>٠١٠ ١٢٣٤ ٥٦٧٨</p>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="icon">✉️</div>
+          <div class="info">
+            <div class="label-text">الإيميل</div>
+            <p>hello@lensmaster.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> ٢٠٢٦ لينز ماستر. كل الحقوق محفوظة. اتعمل بـ لفن التصوير.</p>
+    </div>
+  </footer>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
