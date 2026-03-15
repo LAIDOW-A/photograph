@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       cameraIntro.classList.add('fade-out');
       document.body.classList.remove('intro-active');
+      window.scrollTo(0, 0); // Ensure we start at top
     }, 3500);
 
     // Phase 6: Remove camera intro from DOM at 4.2s
